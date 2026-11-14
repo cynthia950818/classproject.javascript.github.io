@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My First Page - Cynthia</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <header>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+        <h1>孫可芯 (Cynthia)</h1>
+        <p class="quote">"Living a life without regrets."</p>
+    </header>
+
+     <!--Introduction-->
+    <section class="card">
+        <h2>About Me</h2>
+        <table>
+            <tr>
+                <th>Student ID</th>
+                <td>113705004</td>
+            </tr>
+            <tr>
+                <th>School</th>
+                <td>National Yang Min Chiao Tung University</td>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <td>Information Management and Finance</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Taipei, Taiwan</td>
+            </tr>
+        </table>
+    </section>
+
+     <!--Educaiton-->
+    <section class="card">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>College</th>
+                <td>NYCU (undergraduate)</td>
+            </tr>
+            <tr>
+                <th>High School</th>
+                <td>TFG (graduate)</td>
+            </tr>
+        </table>
+    </section>
+
+     <!--Skills-->
+    <section class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>C++</span>
+            <span>HTML</span>
+            <span>Python</span>
+            <span>Data Analysis</span>
+            <span>Finance</span>
+        </div>
+    </section>
+
+    <!--Project, HW-->
+    <section class="card">
+        <h2>Projects & Academic Work</h2>
+        <ul>
+            <li><a href="My Page.html" target="_blank">My Home Page(1st JS HW)</a></li>
+            <li><a href="https://github.com/dashboard" target="_blank">Github Page</a></li>
+            <li><a href="" target="_blank">PPT Profolio(It's still blank right now)</a></li>
+            <li><a href="hw2-113705004.html" target="_blank"></a>Magic(2nd JS HW)</li>
+            <li><a href="hw3-113705004.html" target="_blank"></a>Lotto(3rd JS HW)</li>
+        </ul>
+    </section>
+
+    <!--Interest-->
+    <section class="card">
+        <h2>Interests</h2>
+        <ul>
+            <li onclick="openModal('Dancing is my favorite thing.')">
+                <img src="danceicon.gif" alt="Dance Icon" class="icon-gif"> Dancing</li>
+            <li onclick="openModal('I\'m a fan of Kpop music, especially the group called NCT.')">
+                <img src="kpopicon.gif" alt="Kpop Icon" class="icon-gif"> Kpop Music</li>
+            <li onclick="openModal('I have been a baseball fan since I was little. It is a best childhood memory.')">
+                <img src="baseballicon.gif" alt="Baseball Icon" class="icon-gif"> Baseball</li>
+            <li onclick="openModal('Travelling everywhere is a lifestyle in my family, you can check my experience below.')">
+                <img src="travelicon.gif" alt="Travel Icon" class="icon-gif"> Travel</li>
+            <li onclick="openModal('I workout every week for a healthier body and fit myself.')">
+                <img src="workouticon.gif" alt="Workout Icon" class="icon-gif"> Workout</li>
+        </ul>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <!-- Travel -->
+    <section class="card">
+        <h2>Travel Experience</h2>
+        <table>
+            <tr>
+                <th>Japan</th>
+                <td>Tokyo</td>
+                <td>Fujisan</td>
+                <td>Osaka</td>
+                <td>Kyoto</td>
+                <td>Nagoya</td>
+                <td>Sendai</td>
+                <td>Okinawa(Naha)</td>
+            </tr>
+            <tr>
+                <th>Korea</th>
+                <td>Seoul</td>
+            </tr>
+            <tr>
+                <th>China</th>
+                <td>Shanghai</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Travel Photos Carousel -->
+    <section class="card hidden">
+        <h2>Travel Gallery</h2>
+    
+        <div id="demo" class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="240207.JPG" class="slide"></div>
+                <div class="carousel-item"><img src="240622.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250615.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250616.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250618.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250620.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250720.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="250721.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="251122.JPEG" class="slide"></div>
+                <div class="carousel-item"><img src="260214.JPEG" class="slide"></div>
+            </div>
+
+            <a class="prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"><</span>
+            </a>
+            <a class="next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon">></span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="card">
+        <h2 >Contact</h2>
+        <table>
+            <tr><th>Email</th><td>cynthia950818@gmail.com</td></tr>
+            <tr><th>Email(school)</th><td>cynthia.mg13@nycu.edu.tw</td></tr>
+            <tr><th>Instagram</th><td><a href="https://www.instagram.com/shhcin._/" target="_blank">@shhcin._</a></td></tr>
+        </table>
+    </section>
+
+    <!-- Dark Mode Button -->
+    <button id="darkModeToggle">Dark Mode</button>
+    
+    <footer>
+        <p>© 2026 Cynthia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
